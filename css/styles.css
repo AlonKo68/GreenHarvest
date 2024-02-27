@@ -37,7 +37,7 @@ button {
     /* margin-left: 100px;
     margin-right: 100px; */
     width: 1280px;
-    padding: 0 100px;
+    /* padding: 0 100px; */
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid red;
@@ -63,10 +63,15 @@ button {
 .reviews-desc,
 .order-desc,
 .footer-slogan {
-    /* выравнивание от края */
-    text-align: center;
     line-height: 1.25;
     letter-spacing: -0.02em;
+}
+.header-nav-link,
+.reviews-desc,
+.order-desc,
+.footer-slogan  {
+     /* выравнивание от края */
+     text-align: center;
 }
 .header-nav-link,
 .works-item {
@@ -87,7 +92,7 @@ button {
 .works-captain,
 .advertisement-desc,
 .vegetables-subject,
-.vegetables-captian,
+.vegetables-captain,
 .vegetables-btn,
 .vegetables-text,
 .reviews-captain,
@@ -114,7 +119,7 @@ button {
 .hero-title,
 .works-captain,
 .advertisement-desc,
-.vegetables-captian,
+.vegetables-captain,
 .vegetables-btn, 
 .vegetables-subject,
 .vegetables-text,
@@ -130,7 +135,7 @@ button {
     font-size: 76px;
 }
 .works-captain,
-.vegetables-captian,
+.vegetables-captain,
 .order-social-link,
 .footer-menu-link {
     font-size: 32px;
@@ -138,7 +143,7 @@ button {
 .hero-title,
 .works-captain,
 .vegetables-subject,
-.vegetables-captian,
+.vegetables-captain,
 .reviews-subject,
 .order-subject,
 .order-social-link,
@@ -151,6 +156,8 @@ button {
     font-size: 64px;
 }
 .accent,
+.works-item-accent,
+.advertisement-desc,
 .vegetables-text,
 .reviews-subject,
 .reviews-desc,
@@ -162,91 +169,212 @@ button {
 .order-subject-accent {
     color: rgba(251, 251, 251, 0.30);
 }
+.header-btn,
+.vegetables-btn {
+    display: block;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.header-btn:hover,
+.header-btn:focus,
+.vegetables-btn:hover,
+.vegetables-btn:focus {
+    background-color: #622133;
+}
+.header-btn:active,
+.vegetables-btn:active {
+    background-color: #FBFBFB;
+    color: #7A3145;
+}
 
 /* header */
 .header {
 }
+.header-container {
+    /* display: flex;
+    align-items: center; */
+    padding: 0 100px;
+}
 .header-nav {
+    display: flex;
+    margin-top: 28px;
 }
 .header-nav-logo {
+    display: inline-flex;
+    margin-right: 370px;
+    align-items: center;
+    gap: 8px;
 }
 .header-logo-icon {
 }
 .header-logo-text {
 }
 .header-nav-list {
+    display: flex;
+    gap: 8px;
+    margin-right: auto;
 }
 .header-nav-item {
+    display: flex;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(251, 251, 251, 0.20);
+    
 }
 .header-nav-link {}
 
-.header-btn {}
+.header-btn {
+    background-color: #7A3145;
+}
+.header-btn:active {
+    border: 1px solid rgba(251, 251, 251, 0.20);
+}
 
 /* hero section */
 .hero {
 }
+.hero-container {
+    padding: 0 100px;
+}
 .hero-title {
+   max-width: 502px;
+   margin-top: 168px;
+   margin-bottom: 136px;
 }
 .hero-desc {
+    max-width: 472px;
+   
+    margin-bottom: 50px;
 }
 /* how it works section */
 .works {
 }
+.works-wrapper {
+    display: flex;
+}
 .works-left-side {
     background-color: #7A3145;
+    padding: 80px 100px;
 }
 .works-img {
 }
 .works-right-side {
+    padding: 100px 100px 201px 50px;
 }
 .works-captain {
-
+    margin-bottom: 25px;
 }
 .works-captian-accent {
 }
+
 .works-desc {
+    margin-bottom: 50px;
 }
 .works-list {
 }
 .works-item {
+    display: flex;
     color: rgba(20, 20, 20, 0.6);
     background-color: #FBFBFB;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.works-item-number {
+    /* width: 52px;
+    height: 52px; */
+    border: 5px solid  rgba(122, 49, 69, 0.30);
+    border-radius: 50%;
+    margin: 12px 24px;
+}
+.number {
+    display: block;
+    width: 42px;
+    height: 42px;
+    color: #FBFBFB;
+    padding: 11px 14px;
+    border-radius: 50%;
+    background-color:  #7A3145;
+    
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.00;
+    letter-spacing: -0.02px;
+    text-align: center;
 }
 .works-item-accent {
 }
+
 /* advertisement section */
 .advertisement {
     background-color: #FBFBFB;
+    /* padding: 100px 0px; */
+}
+.advertisement-container {
+    padding: 100px;
 }
 .advertisement-desc {
     line-height: 1.05;
 }
 .advertisement-desc-accent {
+    display: inline;
+    margin-left: -14px;
+    margin-right: 5px;
+    padding-left: 14px;
+    border-radius: 12px;
+    background: #576F35;
+    color: #FBFBFB;
 }
 /* vegetables section */
 .vegetables {
     background-color: #7A3145;
 }
-.vegetables-subject {}
-
+.vegetables-container {
+    padding: 150px 100px;
+}
+.vegetables-subject {
+    width: 508px;
+    margin-bottom: 25px;
+}
 .vegetables-subject-accent {
-
+}
+.vegetables-wrapper {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
 }
 .vegetables-desc {
+    width: 626px;
+    margin-right: auto;
 }
 .vegetables-btn {
+    border: 1px solid rgba(251, 251, 251, 0.20);
 }
 .vegetables-list {
+    display: flex;
+    gap: 28px 18px;
+    flex-wrap: wrap;
+
 }
 .vegetables-item {
+    /* display: flex; */
     background-color: #FBFBFB;
+    border-radius: 40px;
+    width: 348px;
+    height: 392px;
+    padding: 32px;
 }
 .vegetables-captain {
     color: #7A3145;
+    margin-bottom: 12px;
+    /* font-size: 32px; */
 }
 .vegetables-text {
     font-size: 14px;
     line-height: 1.29;
+    margin-bottom: 10px;
 }
 /* rewievs section */
 .reviews {
