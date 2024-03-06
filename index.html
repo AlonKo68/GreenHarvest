@@ -60,7 +60,7 @@
 
       <!-- how it works section -->
       <section class="works" id="howitworks">
-        <div class="container">
+        <div class="work-container container">
           <h2 class="visually-hidden"></h2>
           <div class="works-wrapper">
             <div class="works-left-side">
@@ -135,7 +135,7 @@
         </div>
       </section>
 
-      <!-- Vegetables section -->
+      <!-- vegetables section -->
       <section class="vegetables" id="vegetables">
         <div class="vegetables-container container">
           <h2 class="vegetables-subject">
@@ -191,7 +191,7 @@
 
       <!-- reviews section -->
       <section class="reviews" id="reviews">
-        <div class="container">
+        <div class="reviews-container container">
           <h2 class="reviews-subject">
             reviews from our
             <span class="reviews-subject-accent"> customers </span>
@@ -203,13 +203,13 @@
           <ul class="reviews-list">
             <li class="reviews-item">
               <img
-                class="reviews-avatar"
-                src=""
-                alt=""
+                class="reviews-item-avatar"
+                src="./images/5_reviews/Image.png"
+                alt="pic John Wax"
                 width="56"
                 height="56">
-              <h3 class="reviews-captain">John Wax</h3>
-              <p class="reviews-desc">
+              <h3 class="reviews-item-captain">John Wax</h3>
+              <p class="reviews-item-desc">
                 These vegetables are my secret to delicious and healthy meals.
                 The quality is always at the highest level, the aroma and taste
                 are enchanting. I advise every fan of real products!
@@ -217,13 +217,13 @@
             </li>
             <li class="reviews-item">
               <img
-                class="reviews-avatar"
-                src=""
-                alt=""
+                class="reviews-item-avatar"
+                src="./images/5_reviews/Image-1.png"
+                alt="pic Victoria Romashenko"
                 width="56"
                 height="56">
-              <h3 class="reviews-captain">Victoria Romashenko</h3>
-              <p class="reviews-desc">
+              <h3 class="reviews-item-captain">Victoria Romashenko</h3>
+              <p class="reviews-item-desc">
                 I love how fast and fresh the vegetables are delivered. Salads
                 always turn out so appetizing, and soups are real masterpieces.
                 The quality is impeccable!
@@ -231,13 +231,13 @@
             </li>
             <li class="reviews-item">
               <img
-                class="reviews-avatar"
-                src=""
-                alt=""
+                class="reviews-item-avatar"
+                src="./images/5_reviews/Image-2.png"
+                alt="pic Ihor Trachuk"
                 width="56"
                 height="56">
-              <h3 class="reviews-captain">Ihor Trachuk</h3>
-              <p class="reviews-desc">
+              <h3 class="reviews-item-captain">Ihor Trachuk</h3>
+              <p class="reviews-item-desc">
                 I love how fast and fresh the vegetables are delivered. Salads
                 always turn out so appetizing, and soups are real masterpieces.
                 The quality is impeccable!
@@ -249,7 +249,7 @@
 
       <!-- your order section-->
       <section class="order">
-        <div class="container">
+        <div class="order-container container">
           <h2 class="order-subject">
             Fresh <span class="order-subject-accent"> Harvest </span> Box has
             got you covered
@@ -259,44 +259,53 @@
             for anyone looking to eat healthier or support local farmers. Order
             your box today and start enjoying the best that nature has to offer!
           </p>
-          <form class="order-form" name="">
-            <button class="form-btn" type="submit">Send</button>
-          </form>
           <div class="order-wrapper">
-            <img class="order-img" src="" alt="" width="472" height="273" />
-            <p class="order-social-desc">Follow us on our social networks:</p>
-            <ul class="order-social-list">
-              <li class="order-social-item">
-                <a
-                  class="order-social-link"
-                  href="https://www.instagram.com/goitclub/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram site">
-                  instagram
-                </a>
-              </li>
-              <li class="order-social-item">
-                <a
-                  class="order-social-link"
-                  href="https://www.facebook.com/goITclub/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook site">
-                  facebook
-                </a>
-              </li>
-              <li class="order-social-item">
-                <a
-                  class="order-social-link"
-                  href="https://www.youtube.com/c/GoIT"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Youtube site">
-                  youtube
-                </a>
-              </li>
-            </ul>
+            <div class="order-left-side">
+              <form class="order-form" name="">
+                <button class="form-btn" type="submit">Send</button>
+              </form>
+            </div>
+            <div class="order-right-side">
+              <img class="order-img" src="./images/6_orders/order.png" 
+              alt="" width="472" height="273" />
+              <p class="order-social-desc">Follow us on our social networks:</p>
+              <ul class="order-social-list">
+                <li class="order-social-item">
+                  <a class="order-social-link"
+                    href="https://www.instagram.com/goitclub/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram site">
+                    instagram
+                  </a>
+                </li>
+                <li class="order-social-item">
+                  <p class="order-social-text">/</p>
+                </li>
+                <li class="order-social-item">
+                  <a class="order-social-link"
+                    href="https://www.facebook.com/goITclub/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook site">
+                    facebook
+                  </a>
+                </li>
+                <li class="order-social-item">
+                  <p class="order-social-text">/</p>
+                </li>
+                <li class="order-social-item">
+                  <a
+                    class="order-social-link"
+                    href="https://www.youtube.com/c/GoIT"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Youtube site">
+                    youtube
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -304,50 +313,66 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html">
-          <svg class="footer-logo-icon" width="18" height="18">
-            <use href="./images/header/logo.svg"></use>
-          </svg>
-          <svg class="footer-logo-text" width="168" height="15">
-            <use href="./images/header/logotext.svg"></use>
-          </svg>
-        </a>
-        <p class="footer-slogan">
-          Whether you're looking for a healthy snack or a thoughtful gift, our
-          fruit baskets are the perfect choice.
-        </p>
-        <ul class="footer-menu-list">
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#howitworks" target="" rel=""
-              >how it works
-            </a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#vegetables" target="" rel=""
-              >vegetables
-            </a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#reviews" target="" rel=""
-              >reviews
-            </a>
-          </li>
-        </ul>
-        <address class="footer-address">
-          <ul class="footer-address-list">
-            <li class="footer-address-item">
-              <a class="footer-address-link" href="tel:+380684439426">
-                +380 (68) 443-94-26
+      <div class="footer-container container">
+        <div class="footer-top">
+          <a class="footer-logo" href="./index.html">
+            <svg class="footer-logo-icon" width="18" height="18">
+              <use href="./images/logo/logo1.svg"></use>
+            </svg>
+            <svg class="footer-logo-text" width="168" height="15">
+              <use href="./images/logo/logo2.svg"></use>
+            </svg>
+          </a>
+          <p class="footer-slogan">
+            Whether you're looking for a healthy snack or a thoughtful gift, our
+            fruit baskets are the perfect choice.
+          </p>
+          <ul class="footer-menu-list">
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#howitworks" target="" rel=""
+                >how it works
               </a>
             </li>
-            <li class="footer-address-item">
-              <a class="footer-address-link" href="">
-                1678 S. Pioneer Road Salt Lake City UT 84104
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#vegetables" target="" rel=""
+                >vegetables
+              </a>
+            </li>
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#reviews" target="" rel=""
+                >reviews
               </a>
             </li>
           </ul>
-        </address>
+          <address class="footer-address">
+            <ul class="footer-address-list">
+              <li class="footer-address-item">
+                <a class="footer-address-link" href="tel:+380684439426">
+                  +380 (68) 443-94-26
+                </a>
+              </li>
+              <li class="footer-address-item">
+                <a class="footer-address-link" href="">
+                  1678 S. Pioneer Road Salt Lake City UT 84104
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-wrapper-primary">
+            <p class="footer-bottom-desc">
+              Privacy Policy
+            </p>
+            <p class="footer-bottom-desc">/</p>
+            <p class="footer-bottom-desc">Cookie settings</p>
+          </div>
+          <div class="footer-bottom-wrapper-secondary">
+            <p class="footer-bottom-desc">
+              ©Green Harvest 2023
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
