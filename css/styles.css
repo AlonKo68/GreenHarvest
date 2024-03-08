@@ -2,6 +2,8 @@
 body {
     background-color:  #FBFBFB;
     font-family: "Studio Pro", sans-serif;
+    color: #FBFBFB;
+
 }
 
 /* reset styles */
@@ -17,10 +19,10 @@ a {
     text-decoration: none;
 }
 h1,
-  h2,
-  h3,
-  p {
-      margin: 0;
+h2,
+h3,
+p {
+    margin: 0;
   }
 button {
     font-family: inherit;
@@ -40,14 +42,11 @@ address {
     margin-right: 100px; */
     /* padding: 0 100px; */
     width: 1280px;
-    color: #FBFBFB;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0px 100px;
+    margin: 0px auto;
 
-    outline: 2px solid red;
-    outline-offset: -2px;
+    outline: 1px solid red;
+    outline-offset: -1px;
 }
 .visually-hidden {
     position: absolute;
@@ -214,9 +213,8 @@ address {
 .vegetables-btn {
     display: block;
     padding: 16px 32px;
-    justify-content: center;
-    align-items: center;
     border-radius: 30px;
+    border: 1px solid transparent;
 }
 .header-btn:hover,
 .header-btn:focus,
@@ -360,10 +358,9 @@ address {
     line-height: 1.05;
 }
 .advertisement-desc-accent {
-    display: inline;
     margin-left: -14px;
-    margin-right: 5px;
     padding-left: 14px;
+    margin-right: 5px;
     border-radius: 12px;
     background-color: #576F35;
     color: #FBFBFB;
@@ -399,7 +396,7 @@ address {
 }
 .vegetables-item {
     background-color: #FBFBFB;
-    width: calc((100% - 28px * 2) / 3);
+    width: calc((100% - 18px * 2) / 3);
     height: 392px;
     padding: 32px;
     border-radius: 40px;
