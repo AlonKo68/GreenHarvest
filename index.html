@@ -252,8 +252,26 @@
         </p>
         <div class="order-wrapper">
           <div class="order-left-side">
-            <form class="order-form" name="">
-              <button class="form-btn" type="submit">Send</button>
+            <h3 class="order-form-captain">
+              Ordering
+              <span class="form-captain-accent burgundy">from us</span>
+              is quick and easy! Fill out
+              <span class="form-captain-accent green">the form</span>
+              below and we will contact you !
+            </h3>
+            <form class="order-form" name="order">
+              <label class="order-form-label">
+                <input class="order-form-input" type="text" name="User" placeholder="Full Name" pattern="[a-zA-Z]{2,25}"
+                  title="Username should only contain lowercase letters. e.g. john" required>
+              </label>
+              <label class="order-form-label">
+                <input class="order-form-input" type="email" name="email" placeholder="Email" required>
+              </label>
+              <label class="order-form-label">
+                <textarea class="order-form-textarea" name="user comment" cols="" rows=""
+                  placeholder="Comment"></textarea>
+              </label>
+              <button class="order-form-btn" type="submit">Send</button>
             </form>
           </div>
           <div class="order-right-side">

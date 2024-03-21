@@ -225,8 +225,8 @@ address {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: calc(100% / 2);
-    /* background-size: 50.5%;
-    background-size: 650px 800px; */
+    /* background-size: 50.0%; */
+    /* background-size: 650px 800px; */
 }
 
 /* header */
@@ -494,18 +494,94 @@ address {
 }
 .order-wrapper {
     display: flex;
+    gap: 24px;
 }
 .order-left-side {
-    display: flex;
     background-color: #FBFBFB;
     border-radius: 30px;
-    padding: 50px;
-    margin-right: auto;
+    padding: 50px
 }
-.order-form {
-    max-width: 528px;
+.order-form-captain {
+    color: #141414;
+    font-family: "Inter Tight";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+
+    margin-bottom: 50px;
 }
-.form-btn {
+.form-captain-accent {}
+.burgundy {
+    color: #7A3145;
+}
+.green {
+    color: #576F35;
+}
+.order-form {}
+
+.order-form-label {
+}
+.order-form-input,
+.order-form-textarea {
+    width: 100%;
+    padding: 16px;
+    border-radius: 30px;
+    border: 1px solid rgba(20, 20, 20, 0.20);
+    margin-bottom: 15px;
+    outline: transparent;
+}
+.order-form-input:focus,
+.order-form-textarea:focus {
+    border-color: #7A3145;
+}
+.order-form-input::placeholder,
+.order-form-textarea::placeholder {
+    color: #141414;
+        font-family: "Inter Tight";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        /* 125% */
+        letter-spacing: -0.32px;
+}
+.order-form-input:not(:placeholder-shown):valid {
+   border-color: #3CBC81;
+}
+.order-form-input:not(:placeholder-shown):invalid {
+    border-color: #E74A3B;
+}
+/* перебивание голубого фона при автозаполнении */
+.order-form-input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset;
+}
+
+.order-form-textarea {
+    height: 95px;
+    border-radius: 15px;
+    resize: none;
+}
+.order-form-btn {
+    padding: 16px 191px;
+    border-radius: 30px;
+    border: transparent;
+    background-color: #576F35;
+
+    /* color: #FBFBFB;  */
+    font-family: "Inter Tight";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    /* 111.111% */
+    letter-spacing: -0.27px;
+    text-transform: uppercase;
+}
+.order-form-btn:hover,
+.order-form-btn:focus {
+    background: #7A3145;
 }
 .order-right-side {
     background-color: #576F35;
